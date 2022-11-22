@@ -11,7 +11,8 @@ import SwiftUI
 struct BreakingBadApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharactersView()
+                .environmentObject(FavouritesService())
         }
     }
 }
